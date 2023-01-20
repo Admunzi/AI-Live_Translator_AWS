@@ -1,0 +1,52 @@
+{
+    "Languages": [
+        {
+        "LanguageName": "Spanish US",
+        "LanguageCode": "es-US"
+        },
+        {
+        "LanguageName": "English US",
+        "LanguageCode": "en-US"
+        },
+        {
+        "LanguageName": "English British",
+        "LanguageCode": "en-GB"
+        },
+        {
+        "LanguageName": "French Canadian",
+        "LanguageCode": "fr-CA"
+        },
+        {
+        "LanguageName": "Swedish",
+        "LanguageCode": "sv-SE"
+        },
+        {
+        "LanguageName": "Portuguese Brazilian",
+        "LanguageCode": "pt-BR"
+        },
+        {
+        "LanguageName": "English Australian",
+        "LanguageCode": "en-AU"
+        },
+        {
+        "LanguageName": "French",
+        "LanguageCode": "fr-FR"
+        },
+        {
+        "LanguageName": "Italian",
+        "LanguageCode": "it-IT"
+        },
+        {
+        "LanguageName": "German",
+        "LanguageCode": "de-DE"
+        },
+        {
+        "LanguageName": "Portuguese",
+        "LanguageCode": "pt-PT"
+        },
+        {
+        "LanguageName": "Dutch",
+        "LanguageCode": "nl-NL"
+        }
+    ]
+}
