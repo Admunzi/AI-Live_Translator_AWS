@@ -1,5 +1,6 @@
 from transcribe import transcribe_audio
 import json
+import threading
 
 
 def get_languages():
@@ -35,7 +36,10 @@ def principal_menu():
 
     languages = get_languages()
     language_input, language_output = choose_languages(languages)
-    transcribe_audio(language_input, language_output)
+    threading.Thread(target=transcribe_audio(language_input, language_output)).start()
+    # Exit the program when the user presses the enter key
+    input("Press Enter to exit...")
+    exit()
 
 
 def choose_languages(languages):
@@ -51,7 +55,8 @@ def choose_languages(languages):
 
         if language_input == language_output:
             print("The input and output languages must be different")
-        elif language_input < 1 or language_output < 1 or language_input >= len(languages['Languages']) + 1 or language_output >= len(languages['Languages']) + 1:
+        elif language_input < 1 or language_output < 1 or language_input >= len(
+                languages['Languages']) + 1 or language_output >= len(languages['Languages']) + 1:
             print("Invalid option")
         else:
             language_input = languages['Languages'][language_input - 1]['LanguageCode']
