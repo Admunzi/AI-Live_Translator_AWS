@@ -1,6 +1,5 @@
 from transcribe import transcribe_audio
 import json
-import threading
 
 
 def get_languages():
@@ -36,10 +35,7 @@ def principal_menu():
 
     languages = get_languages()
     language_input, language_output = choose_languages(languages)
-    threading.Thread(target=transcribe_audio(language_input, language_output)).start()
-    # Exit the program when the user presses the enter key
-    input("Press Enter to exit...")
-    exit()
+    transcribe_audio(language_input, language_output)
 
 
 def choose_languages(languages):
